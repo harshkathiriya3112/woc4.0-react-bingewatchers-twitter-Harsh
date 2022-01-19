@@ -1,0 +1,106 @@
+.form {
+  /* background-color: aqua; */
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.heading1 {
+  font-size: 30px;
+  width: 300px;
+}
+
+.icon1 {
+  position: absolute;
+  padding-top: 13px;
+  padding-left: 3px;
+}
+
+.email {
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 19px;
+  height: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.password {
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 19px;
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.btn1 {
+  /* padding:16px; */
+  text-align: center;
+  font-size: 30px;
+  width: 285px;
+  font-weight: bold;
+  background-color: darkkhaki;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.icon2 {
+  font-size: 25px;
+  position: absolute;
+  margin-left: 255px;
+  margin-top: 8px;
+}
+.btn1:hover {
+  cursor: pointer;
+}
+
+.te1 {
+  font-family: sans-serif;
+  font-weight: 600;
+  width: 300px;
+}
+
+
+
+
+/* Column container */
+.bodyy {
+  display: flex;
+}
+
+/* Create two unequal columns that sits next to each other */
+.form {
+  flex: 55%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main column */
+.image {
+  flex: 45%;
+  background-color: white;
+}
+
+.animation {
+  height: 742px;
+}
+
+.content1{
+  /* width:50%; */
+  display: inline-block;
+  margin-top:185px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bodyy{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .content1{
+    /* width:50%; */
+    margin-top:0px;
+  }
+  .animation{
+    height:400px;
+  }
+}
