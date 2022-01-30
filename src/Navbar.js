@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({logout}) {
   return (
     <nav className="bodyy_nav">
       <div className="left">
@@ -19,7 +19,7 @@ function Navbar() {
       </div>
       <div className="right">
         <Link to="/SignIn">
-          <button className="btn2">Sign Out</button>
+          <button className="btn2" onClick ={logout}>Sign Out</button>
         </Link>
       </div>
     </nav>

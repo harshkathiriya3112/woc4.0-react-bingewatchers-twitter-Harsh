@@ -1,0 +1,10 @@
+.container {
+    width: 90vw;
+    margin: 5rem auto;
+    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    border-radius: 0.25rem;
+    padding: 2.5rem 2rem;
+    max-width: 920px;
+    display: grid;
+    gap: 1rem 2rem;
+  }

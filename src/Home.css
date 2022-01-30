@@ -1,0 +1,119 @@
+.left1 {
+  flex: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right1 {
+  flex: 80%;
+}
+.right2 {
+  flex: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.image_home {
+  height:80px;
+  width:80px;
+}
+
+.comment_icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.like_icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+
+.container2 {
+  width: 90vw;
+  margin: 5rem auto;
+  background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  
+  border-radius: 0.25rem;
+  padding: 2.5rem 2rem;
+  padding-top: 5px;
+  max-width: 920px;
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.tweet-input {
+  overflow-wrap: break-word;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 19px;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 15px;
+  display: block;
+}
+
+.btn3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: orangered;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 17px;
+  width: 100px;
+}
+
+.whole {
+  display: flex;
+}
+
+.left_image {
+  flex: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.right_cont {
+  flex: 90%;
+}
+.h11 {
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+.pp {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.liked_but{
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  color:red;
+}
+
+.like_num{
+  font-size:20px;
+  margin-right: 10px;
+
+}
+.comment_num{
+  font-size: 20px;
+  margin-left:3px;
+}

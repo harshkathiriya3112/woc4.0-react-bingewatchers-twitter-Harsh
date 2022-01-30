@@ -18,8 +18,8 @@ const SignIn = () => {
   const [loginPassword, setLoginPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const [user, setUser] = useState("");
-  const [hasaccount, sethasAccount] = useState(false);
+  // const [user, setUser] = useState("");
+  // const [hasaccount, sethasAccount] = useState(false);
 
   const login = async () => {
     try {
@@ -28,6 +28,7 @@ const SignIn = () => {
         loginEmail,
         loginPassword
       );
+      console.log(user);
       history.push("/Home");
     } catch (error) {
       switch (error.code) {
@@ -44,13 +45,9 @@ const SignIn = () => {
     }
   };
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      setUser(user);
-    } else {
-      setUser("");
-    }
-  });
+  // onAuthStateChanged(auth, (user) => {
+  //   setUser(user);
+  // });
 
   return (
     <div className="bodyy">
@@ -72,7 +69,7 @@ const SignIn = () => {
           <br />
           <RiLockPasswordLine className="icon1"></RiLockPasswordLine>
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             className="password"
             required
