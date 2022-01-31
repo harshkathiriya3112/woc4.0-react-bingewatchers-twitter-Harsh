@@ -15,7 +15,7 @@ function Navbar({logout}) {
   return (
     <nav className="bodyy_nav">
       <div className="left">
-        <h1 className="binge">BingeWatcher</h1>
+        <h1 className="binge">Tweettzee</h1>
         <Link to="/Home" className="Link">
           <h2>Home</h2>
         </Link>
