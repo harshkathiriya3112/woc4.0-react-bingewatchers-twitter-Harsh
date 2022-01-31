@@ -1,10 +1,57 @@
 .container {
-    width: 90vw;
-    margin: 5rem auto;
-    background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-    border-radius: 0.25rem;
-    padding: 2.5rem 2rem;
-    max-width: 920px;
-    display: grid;
-    gap: 1rem 2rem;
-  }
+  /* width: 90vw; */
+  /* margin: 5rem auto */
+  /* margin-top: 50px; */
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.25rem;
+  /* padding: 2.5rem 2rem; */
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  max-width: 920px;
+  display: grid;
+
+  background-color: #fcc8ca;
+  background: rgb(105, 107, 238);
+
+  background: linear-gradient(
+    90deg,
+    rgb(105, 107, 238),
+    hsla(0, 100%, 89%, 1) 33%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(105, 107, 238),
+    hsla(0, 100%, 89%, 1) 33%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(105, 107, 238),
+    hsla(0, 100%, 89%, 1) 33%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff5858", endColorstr="#ffc8c8", GradientType=1 );
+
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(196, 44, 163);
+  border-color: rgb(0, 2, 128);
+}
+
+.trend_title{
+  color: rgb(0, 2, 128);
+  text-align: center;
+
+}
+
+.trend_date{
+  text-align:right;
+
+}
+
+.trend_rate{
+  text-align:center;
+}

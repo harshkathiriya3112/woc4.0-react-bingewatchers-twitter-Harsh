@@ -97,9 +97,7 @@ const Home = () => {
     gettweets();
   }, [newTweet]);
 
-  const like = async (twett,likes) => {
-
-
+  const like = async (twett) => {
 
     
 
@@ -141,6 +139,22 @@ const Home = () => {
         },
         { merge: true }
       );
+
+
+
+
+
+      const q2 = query(usersCollectionRef, orderBy("timestamp", "desc"));
+      const data2 = await getDocs(q2);
+      console.log(data2);
+
+      let arr2 = [];
+      data2.docs.forEach((doc) => {
+        arr2.push({ ...doc.data(), id: doc.id });
+      });
+      console.log(arr2);
+      // setTweet(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setTweet(arr2);
       
     } else {
       alert("You have already liked this tweet");
@@ -152,7 +166,7 @@ const Home = () => {
       <Navbar logout={logout} />
       {/* {tweet.length} */}
 
-      <div className="container2 whole">
+      <div className="container21 whole">
         <div className="left_image">
           {/* <img src="/" alt="/"></img> */}
           <FaUserAlt className="image_home"></FaUserAlt>
@@ -215,7 +229,7 @@ const Home = () => {
               <div className="right2">
                 {/* <Link to="/Comment_card" > */}
                 <AiOutlineLike
-                  className={vari.css}
+                  className="like_icon"
                   onClick={() => like(vari.tweett,vari.liked_num)}
                 ></AiOutlineLike>
                 <div className="like_num">{vari.liked_num}</div>

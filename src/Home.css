@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 
 .right1 {
@@ -20,8 +19,8 @@
 }
 
 .image_home {
-  height:80px;
-  width:80px;
+  height: 80px;
+  width: 80px;
 }
 
 .comment_icon {
@@ -38,10 +37,30 @@
 }
 
 .container2 {
+  margin-top: 50px;
   width: 90vw;
-  margin: 5rem auto;
-  background: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  
+  /* margin: 5rem auto; */
+  margin-left: auto;
+  margin-right: auto;
+  /* background: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+  background-color: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(177, 97, 204, 1)),
+    color-stop(72%, rgba(169, 71, 194, 1)),
+    color-stop(78%, rgba(198, 56, 220, 1)),
+    color-stop(93%, rgba(250, 25, 220, 1)),
+    color-stop(100%, rgba(250, 25, 220, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(177, 97, 204, 1) 0%,
+    rgba(169, 71, 194, 1) 72%,
+    rgba(198, 56, 220, 1) 78%,
+    rgba(250, 25, 220, 1) 93%,
+    rgba(250, 25, 220, 1) 100%
+  );
+
   border-radius: 0.25rem;
   padding: 2.5rem 2rem;
   padding-top: 5px;
@@ -50,7 +69,28 @@
   gap: 1rem 2rem;
 }
 
+.container21 {
+  margin-top: 110px;
+  width: 90vw;
+  /* margin: 5rem auto; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgba(198, 56, 220, 1) ;
+  /* background: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+
+  border-radius: 0.25rem;
+  padding: 2.5rem 2rem;
+  padding-top: 5px;
+  max-width: 1100px;
+  display: grid;
+  gap: 1rem 2rem;
+  border: 5px solid black;
+
+
+}
+
 .tweet-input {
+  width: 90%;
   overflow-wrap: break-word;
   border-radius: 3px;
   padding: 10px;
@@ -75,6 +115,7 @@
 
 .whole {
   display: flex;
+  /* border-radius:10px solid black; */
 }
 
 .left_image {
@@ -83,7 +124,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
 }
 .right_cont {
   flex: 90%;
@@ -101,19 +141,18 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.liked_but{
+.liked_but {
   height: 30px;
   width: 30px;
   cursor: pointer;
-  color:red;
+  color: red;
 }
 
-.like_num{
-  font-size:20px;
-  margin-right: 10px;
-
-}
-.comment_num{
+.like_num {
   font-size: 20px;
-  margin-left:3px;
+  margin-right: 10px;
+}
+.comment_num {
+  font-size: 20px;
+  margin-left: 3px;
 }

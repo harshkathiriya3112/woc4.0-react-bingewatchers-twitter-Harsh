@@ -7,8 +7,10 @@ import "./SignIn.css";
 import { auth } from "./firebase-config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import animate from "./images/88998-website.gif";
+import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
+  const history=useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const[confirmPassword, setConfirmPassword] = useState("");
@@ -41,10 +43,10 @@ const SignUp = () => {
     if (password.length < 6) {
       alert("password must contain at least 6 characters");
     }
-    if (password.length > 6) {
+    if (password.length >= 6) {
       setEmail("");
       setPassword("");
-
+      history.push("/SignIn");
     }
   };
 
@@ -68,17 +70,6 @@ const SignUp = () => {
                 setEmail(e.target.value);
               }}
             />
-            <br />
-            {/* <RiLockPasswordLine className="icon1"></RiLockPasswordLine>
-            <input
-              type="password"
-              placeholder="Password"
-              className="password"
-              // value={password}
-              // onChange={(e) => {
-              //   setPassword(e.target.value);
-              // }}
-            /> */}
             <br />
             <RiLockPasswordLine className="icon1"></RiLockPasswordLine>
             <input

@@ -19,6 +19,7 @@ import {
 import { FaUserAlt } from "react-icons/fa";
 import { FaRegComment } from "react-icons/fa";
 import { useHistory } from "react-router-dom";
+import "./Personal.css"
 
 const Personal = (props) => {
   const history = useHistory();
@@ -215,7 +216,7 @@ const Personal = (props) => {
   return (
     <div>
       <Navbar logout={logout} />
-      <div className="container">
+      <div className="container23">
         <div className="container5">
           <div className="pp button_follow">
             <FaUserAlt className="profile_image"></FaUserAlt>
@@ -226,7 +227,7 @@ const Personal = (props) => {
             </h1>
           </div>
           <div className="pp button_follow">
-            <button className="button-64" role="button" onClick={follow}>
+            <button className="follow_but" role="button" onClick={follow}>
               Follow
             </button>
           </div>

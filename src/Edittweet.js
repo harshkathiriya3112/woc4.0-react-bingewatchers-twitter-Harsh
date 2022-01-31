@@ -56,10 +56,10 @@ const Edittweet = () => {
 
     const usersCollectionRef = collection(db, "tweet");
 
-    if (!user || !user.email) return;
+    // if (!user || !user.email) return;
     const q = query(usersCollectionRef, where("doc_timee", "==", doci));
 
-    q = query(usersCollectionRef, orderBy("timestamp", "desc"));
+    // q = query(usersCollectionRef, orderBy("timestamp", "desc"));
 
     let arr2 = [];
     const fun = async () => {

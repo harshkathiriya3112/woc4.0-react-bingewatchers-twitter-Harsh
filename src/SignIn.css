@@ -1,12 +1,12 @@
 .form {
   /* background-color: aqua; */
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
-  background-color: #ff8272;
+  background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
 }
 
 .heading1 {
   font-size: 30px;
   width: 300px;
+  color: rgb(0, 2, 128);
 }
 
 .icon1 {
@@ -38,7 +38,9 @@
   font-size: 30px;
   width: 285px;
   font-weight: bold;
-  background-color: darkkhaki;
+  background-color: rgb(70, 70, 184);
+  color:whitesmoke;
+  /* background-color: darkkhaki; */
   border-radius: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -58,6 +60,8 @@
   font-family: sans-serif;
   font-weight: 600;
   width: 300px;
+  color: rgb(0, 2, 128);
+  font-size:18px;
 }
 
 

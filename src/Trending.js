@@ -30,9 +30,10 @@ const Trending = () => {
         <div>
           {users.map((data) => (
             <div key={data.id.value} className="container">
-              <h1> {data.title}</h1>
-              <h4>{data.release_date}</h4>
-              <p>{data.overview}</p>
+              <h1 className="trend_title"> {data.title}</h1>
+              <h4>{data.overview}</h4>
+              <h4 className="trend_date">{data.release_date}</h4>
+              <h4 className="trend_rate">RATING:{data.vote_average}</h4>
             </div>
           ))}
         </div>

@@ -86,7 +86,7 @@ const Profile = () => {
   return (
     <div>
       <Navbar logout={logout}></Navbar>
-      <div className="container">
+      <div className="container22">
         <div className="container5">
           <div className="pp button_follow">
             <FaUserAlt className="profile_image"></FaUserAlt>

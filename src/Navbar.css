@@ -1,53 +1,85 @@
 .bodyy_nav {
   display: flex;
-  height:60px;
-  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  height: 80px;
+  /* background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+  background-color: #fcc8ca;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   /* display:inline-block; */
 }
-.left{
-    flex:93%;
+.left {
+  flex: 93%;
 }
-.right{
-    flex:7%;
+.right {
+  flex: 7%;
+  font-size: 20px;
 }
 .binge {
   margin-top: 8px;
   font-size: 30px;
   display: inline-block;
-  height:50px;
+  height: 50px;
+  color: rgb(0, 2, 128);
 }
 
 .Link {
+  /* font-size: 20px; */
   margin-left: 20px;
   margin-top: 0px;
   display: inline-block;
   /* margin-bottom: 10px; */
-  color: black;
+  /* color: black; */
+  color: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(177, 97, 204, 1)),
+    color-stop(72%, rgba(169, 71, 194, 1)),
+    color-stop(78%, rgba(198, 56, 220, 1)),
+    color-stop(93%, rgba(250, 25, 220, 1)),
+    color-stop(100%, rgba(250, 25, 220, 1))
+  );
+  color: -webkit-linear-gradient(
+    top,
+    rgba(177, 97, 204, 1) 0%,
+    rgba(169, 71, 194, 1) 72%,
+    rgba(198, 56, 220, 1) 78%,
+    rgba(250, 25, 220, 1) 93%,
+    rgba(250, 25, 220, 1) 100%
+  );
   text-decoration: none;
-  height:50px;
+  height: 50px;
 }
 
 .btn2 {
-  font-size: 20px;
-  font-weight: bold;
+
+  display:inline-block;
+    width: 100px;
+    margin-right:5px;
+    margin-left:35px;
+    height:30px;
+    font-size: 17px;
+    border-radius: 3px;
+    color:whitesmoke;
+    background-color:rgb(238, 49, 49);
+    margin-top: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 7px;
+  /* font-size: 20px;
   color: white;
-  background-color:orangered;
-  border-radius: 7px;
-  cursor: pointer;
-  margin-top:17px;
-  width: 100px;
+  background-color: orangered;
+  width: 100px; */
   /* margin-left:980px; */
 }
 
-@media screen and (max-width:608px) {
-  .btn2{
-    margin-right:5px;
+@media screen and (max-width: 608px) {
+  .btn2 {
+    margin-right: 5px;
     /* width:105px; */
   }
-
-
 }
 
-@media screen and (max-width:580px) {
-  
+@media screen and (max-width: 580px) {
 }

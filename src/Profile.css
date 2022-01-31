@@ -18,6 +18,23 @@
   width: 100px;
 }
 
+.container22{
+  width: 90vw;
+  /* margin: 5rem auto; */
+  margin-top:110px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: linear-gradient(to top, #00c6fb 0%, #005bea 100%); */
+  background-color:rgba(198, 56, 220, 1) ;
+  
+  border-radius: 0.25rem;
+  padding: 2.5rem 2rem;
+  padding-top: 5px;
+  max-width: 800px;
+  display: grid;
+  gap: 1rem 2rem;
+}
+
 .button-64 {
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
