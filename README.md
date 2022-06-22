@@ -1,6 +1,6 @@
 # BingeWatcher Twitter
 
-Website link: 
+Website link: https://61f84f0e857f2c0cbb63a8d6--competent-shirley-6b4994.netlify.app/
 
 # Getting Started with Create React App
 
